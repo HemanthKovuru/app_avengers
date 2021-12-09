@@ -1,0 +1,56 @@
+.bookcard {
+  width: 100%;
+  box-shadow: 0 0 0.8rem rgba(112, 112, 112, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 0.1px solid hsla(0, 0%, 43.9%, 0.15);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  margin-bottom: 2rem;
+
+  &-left {
+    display: flex;
+    border-right: 1px solid #cccccc9a;
+    padding-right: 1rem;
+    img {
+      height: 20rem;
+      margin-right: 1.5rem;
+      border-radius: 0.5rem;
+    }
+
+    &-info {
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+      font-size: 1.4rem;
+
+      &-bottom {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1.1rem;
+
+    &-status {
+      font-size: 1.8rem;
+      color: green;
+    }
+  }
+}
+
+.price-info {
+  .price {
+    font-size: 2rem;
+    color: rgb(196, 8, 8);
+  }
+}
